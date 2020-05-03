@@ -50,6 +50,7 @@ def jalan(z):
 
 #Dev:Saqli_bhai
 ##### LOGO #####
+
 logo = """
        \033[1;91m:▒▒▒▒███▒███▒███▒███▒▒▒▒▒▒▒▒▒▒:
       \033[1;92m▒▒▒▒▒▒▒▒█▒█▒█▒▒▒█▒█▒█▒▒▒▒▒▒▒▒▒▒::     
@@ -68,6 +69,8 @@ logo = """
 \033[1;93m║║ ║╚╣║║║║╩╣ ╚╗╔╣║║║║   Saqlain khan And Huzaifa Pathan
 \033[1;93m╚╝ ╚═╩═╩═╩═╝═ ╚╝╚═╩═╝ 
 \033[1;95m♡╰──────────•◈•──────────╯♡\033[1;96  Huzaifa Pathan\033[1;95m♡╰──────────•◈•──────────╯♡""" 
+
+
 
 def tik():
 	titik = ['.   ','..  ','... ']
@@ -93,6 +96,7 @@ print  """
  \033[1;96m ┈┈┈┈┈┈┈┈┈┈┈┈▕╲▂▂╱▏┈┈┈┈┈┈┈┈
  \033[1;96m ┈┈┈┈┈┈┈┈╱▔▔▔▔┊┊┊┊▔▔▔▔╲┈┈┈┈
   \033[1;96m ─────────────•◈•──────────  
+   
    \033[1;92m███████▒▒Welcome To Huzaifi and Saqli Bhai▒▒████████
 \033[1;95m♡╭──────────•◈•──────────╮♡\033[1;96   Saqlibhai\033[1;95m♡╭──────────•◈•──────────╮♡
 \033[1;94mAuthor\033[1;91m: \033[1;91     King creations
@@ -263,7 +267,7 @@ def pilih_super():
 	elif peak =="1":
 		os.system('clear')
 		print logo
-		print "\033[1;95m♡─────────•◈•─────────♡\033[1;96  Huxaifibhai\033[1;95m♡─────────•◈•─────────♡"
+		print "\033[1;95m♡─────────•◈•─────────♡\033[1;96Huxaifibhai\033[1;95m♡─────────•◈•─────────♡"
 		jalan('\033[1;93mGetting IDs \033[1;97m...')
 		r = requests.get("https://graph.facebook.com/me/friends?access_token="+toket)
 		z = json.loads(r.text)
@@ -272,9 +276,12 @@ def pilih_super():
 	elif peak =="2":
 		os.system('clear')
 		print logo
+		
+		
 		idt = raw_input("\033[1;96m[♡] \033[1;92mEnter ID\033[1;93m: \033[1;97m")
-		print "\033[1;95m♡─────────•◈•─────────♡\033[1;96  saqlibhai\033[1;95m♡─────────•◈•─────────╯♡"
+		print "\033[1;95m♡─────────•◈•─────────♡\033[1;96saqlibhai\033[1;95m♡─────────•◈•─────────╯♡"
 		try:
+			
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 			op = json.loads(jok.text)
 			print"\033[1;93mName\033[1;93m:\033[1;97m "+op["name"]
@@ -282,6 +289,8 @@ def pilih_super():
 			print"\x1b[1;92mID Not Found!"
 			raw_input("\n\033[1;96m[\033[1;94mBack\033[1;96m]")
 			super()
+		
+		
 		print"\033[1;93mGetting IDs\033[1;93m..."
 		r = requests.get("https://graph.facebook.com/"+idt+"/friends?access_token="+toket)
 		z = json.loads(r.text)
@@ -297,7 +306,7 @@ def pilih_super():
 	jalan('\033[1;92mPlease Wait\033[1;93m...')
 	titik = ['.   ','..  ','... ']
 	for o in titik:
-		
+	
 		
 		print("\r\033[1;91mCloning\033[1;93m"+o),;sys.stdout.flush();time.sleep(1)
 	print "\n\033[1;94m«-----\x1b[1;93m♡To Stop Process Press CTRL+Z♡\033[1;94m----»"
